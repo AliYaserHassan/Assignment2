@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="descriptions" content="denmark site seeing">
+    <meta name="keyword" content="denmark, questions">
+    <meta name="author" content="Ali Hassan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Denmark Travel Guide </title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <!--need to use css stlye for width and height-->
+    <img src="Images/Anonymous_Flag_of_Denmark.png" alt="logo" class="left" />
+
+    <h1>Denmark Travel Guide</h1>
+
+    <header>
+        <h2>Contact</h2>
+        <!--navigation manu to other html files and article section-->
+        <nav>
+
+            <ul>
+                <li><a href="cozydenmark.html">Main</a></li>
+                <li><a href="vordingborg.html">Vordingborg</a></li>
+                <li><a href="littlemermaid.html">Little Mermaid</a></li>
+                <li><a href="Contact.html" class="current">Contact</a></li>
+                <li><a href="https://www.expedia.ca">book a trip</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <form method="get" action="ahass762@mtroyal.ca">
+
+        <!--required-->
+        <label> Enter your Subject (required)
+        <input type="text" name="Subject"  maxlength="10" required /><br><br />
+        </label>
+
+        <!--required-->
+        <label> Enter your Inquiry below (required)<br>
+        <textarea rows="5" cols="50" name="inquiry"  required></textarea><br><br>
+        </label>
+
+        <fieldset>
+        <legend>Personal Info</legend>
+        <!--required-->
+        <label> Enter your email here (required) EX: example@gmail.com 
+        <input type="text" name="userEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required /><br><br />
+        </label>
+
+        <label>Enter phone number EX: 123-123-1234
+        <input type="tel" name="Phone Number"  pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" /><br><br>
+        </label>
+        
+
+        
+        <label> choose Country
+        <input type="radio" name="Nation" value="usa">USA
+        <input type="radio" name="Nation" value="canada">CA<br><br />
+            </label>
+
+        
+        <label> Choose your traveling experince
+        <input type="checkbox" name="newtourist" value="new"> New Tourist
+        <input type="checkbox" name="newtourist" value="old"> Experienced Traveler<br><br>
+            </label>
+
+        </fieldset>
+
+        <br>
+        <label>Enter the current date
+            <input name="date" type="date" required /><br><br />
+        </label>
+
+
+        <input type="reset" value="Clear" class="button1">
+        <label>
+
+            </label>
+
+        <input type="submit" value="Send" class="button1">
+        <label>
+
+            </label>
+
+    </form>
+</body>
+
+</html>
